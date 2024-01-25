@@ -7,7 +7,7 @@ const LastOrders = () => {
           <p className="font-semibold text-sm text-[#34CAA5]">See All</p>
         </div>
         <div className="overflow-x-auto my-3">
-          <table className="table-auto  w-full  divide-y divide-gray-100 text-sm">
+          <table className="table-auto overflow-x-auto w-full divide-y divide-gray-100 text-sm">
             <thead>
               <tr className="text-[#9CA4AB] flex flex-row items-center justify-between mb-3 gap-4">
                 <th className="w-40 text-start font-semibold">Name</th>
