@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus_Jakarta_Sans";
+  src: url("/font/PlusJakartaSans-VariableFont_wght.ttf");
+  font-display: swap;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  appearance: none;
+  background-color: transparent;
+  left: 99999px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #fff;
+  height: 4.7rem;
+  width: 2.3rem;
+  position: relative;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+label svg {
+  z-index: 40;
+}
+
+.switcher {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.3rem;
+  height: 2.15rem;
+  transform: scale(0.9);
+  background-color: #34caa5;
+  border-radius: 100%;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked ~ label .switcher {
+  background-color: #34caa5;
+  position: absolute;
+  top: 2.35rem;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked ~ label .sun path {
+  fill: #b2abab;
+}
+
+input[type="checkbox"]:checked ~ label .moon path {
+  fill: #fff;
+}
+
