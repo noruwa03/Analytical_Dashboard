@@ -12,13 +12,13 @@ const Header = () => {
   return (
     <>
       {" "}
-      <header className="lg:grid lg:grid-cols-6 lg:h-20 h-14 lg:items-center bg-[#FAFAFA] dark:bg-[#1e262c] dark:text-white border-b-[0.8px] border-gray-[#E3E3E3] sticky top-0 z-30 lg:px-6 sm:px-8 px-6 gap-6">
+      <header className="lg:grid lg:grid-cols-6 items-center lg:h-20 h-14  bg-[#FAFAFA] dark:bg-[#1e262c] dark:text-white border-b-[0.8px] border-gray-[#E3E3E3] sticky top-0 z-30 lg:px-6 sm:px-8 px-6 gap-6">
         <div className="col-span-2">
           <h1 className="font-semibold lg:relative lg:top-0 lg:left-0 fixed top-4 left-6">
             Dashboard
           </h1>
         </div>
-        <div className="lg:col-span-4 col-span-8 lg:grid lg:relative lg:top-0 lg:left-0 fixed top-14 left-0 lg:h-16 h-full w-full z-20 grid-cols-6 lg:px-0 px-6 items-center gap-6">
+        <div className="lg:col-span-4 col-span-8 lg:grid lg:relative lg:top-0 lg:left-0 fixed top-14 left-0 lg:h-20 h-full w-full z-20 grid-cols-6 lg:px-0 px-6 items-center gap-6">
           <div className="lg:block hidden col-span-2 lg:mt-0 mt-4 relative dark:text-black">
             <input
               type="search"
