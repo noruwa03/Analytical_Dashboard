@@ -11,7 +11,6 @@ const NavBar: React.ForwardRefRenderFunction<
   const isChecked = useRef<HTMLInputElement>(null);
 
   const root = document.documentElement;
-  const darkQuery = window.matchMedia("prefers-color-scheme: dark");
 
   useEffect(() => {
     switch (theme) {
@@ -30,16 +29,6 @@ const NavBar: React.ForwardRefRenderFunction<
         break;
     }
   }, [theme, root]);
-
-  darkQuery.addEventListener("change", (e) => {
-    if (!("theme" in localStorage)) {
-      if (e.matches) {
-        root.classList.add("dark");
-      } else {
-        root.classList.remove("dark");
-      }
-    }
-  });
 
   const applyTheme = () => {
     if (isChecked.current?.checked) {

@@ -1,10 +1,17 @@
+import { useState } from "react";
+import Invoice from "../Invoice/Invoice";
+
 const LastOrders = () => {
+  const [invoiceModal, setInvoiceModal] = useState(false);
+
+  const toggleClose = (): void => setInvoiceModal(!invoiceModal);
   return (
     <>
+      {invoiceModal && <Invoice close={toggleClose} />}
       <div className="lg:w-[54%] w-[100%] bg-white dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-4">
         <div className="flex flex-row items-center justify-between mb-4">
-          <h2 className="font-semibold text-sm">Last Orders</h2>
-          <p className="font-semibold text-sm text-[#34CAA5]">See All</p>
+          <h2 className="font-semibold text-[0.94em]">Last Orders</h2>
+          <p className="font-semibold text-[0.94em] text-[#34CAA5]">See All</p>
         </div>
         <div className="overflow-x-auto my-3">
           <table className="table-auto overflow-x-auto w-full divide-y divide-gray-100 text-sm">
@@ -32,7 +39,10 @@ const LastOrders = () => {
                 <td className="w-20 text-start text-[#737373]">Nov 15, 2023</td>
                 <td className="w-20 text-start font-semibold">$80,000</td>
                 <td className="w-20 text-start text-[#34CAA5]">Paid</td>
-                <td className="w-20 flex flex-row items-center justify-start gap-2">
+                <td
+                  onClick={toggleClose}
+                  className="w-20 flex flex-row items-center justify-start gap-2 cursor-pointer"
+                >
                   <svg
                     width="16"
                     height="16"
@@ -75,7 +85,10 @@ const LastOrders = () => {
                 <td className="w-20 text-start text-[#737373]">Nov 15, 2023</td>
                 <td className="w-20 text-start font-semibold">$150,000</td>
                 <td className="w-20 text-start text-[#ED544E]">Refund</td>
-                <td className="w-20 flex flex-row items-center justify-start gap-2">
+                <td
+                  onClick={toggleClose}
+                  className="w-20 flex flex-row items-center justify-start gap-2 cursor-pointer"
+                >
                   <svg
                     width="16"
                     height="16"
@@ -118,7 +131,10 @@ const LastOrders = () => {
                 <td className="w-20 text-start text-[#737373]">Nov 14, 2023</td>
                 <td className="w-20 text-start font-semibold">$87,000</td>
                 <td className="w-20 text-start text-[#34CAA5]">Paid</td>
-                <td className="w-20 flex flex-row items-center justify-start gap-2">
+                <td
+                  onClick={toggleClose}
+                  className="w-20 flex flex-row items-center justify-start gap-2 cursor-pointer"
+                >
                   <svg
                     width="16"
                     height="16"
@@ -161,7 +177,10 @@ const LastOrders = () => {
                 <td className="w-20 text-start text-[#737373]">Nov 15, 2023</td>
                 <td className="w-20 text-start font-semibold">$100,000</td>
                 <td className="w-20 text-start text-[#ED544E]">Refund</td>
-                <td className="w-20 flex flex-row items-center justify-start gap-2">
+                <td
+                  onClick={toggleClose}
+                  className="w-20 flex flex-row items-center justify-start gap-2 cursor-pointer"
+                >
                   <svg
                     width="16"
                     height="16"
@@ -204,7 +223,10 @@ const LastOrders = () => {
                 <td className="w-20 text-start text-[#737373]">Nov 13, 2023</td>
                 <td className="w-20 text-start font-semibold">$78,000</td>
                 <td className="w-20 text-start text-[#34CAA5]">Paid</td>
-                <td className="w-20 flex flex-row items-center justify-start gap-2">
+                <td
+                  onClick={toggleClose}
+                  className="w-20 flex flex-row items-center justify-start gap-2 cursor-pointer"
+                >
                   <svg
                     width="16"
                     height="16"
