@@ -70,7 +70,7 @@ function App() {
           </div>
         </div>
 
-        <div className="lg:w-[95%] w-full bg-[#FAFAFA] dark:bg-[#1e262c]">
+        <div className="lg:w-[95%] w-full bg-[#FAFAFA] dark:bg-black">
           <Header />
           <SalesTrends />
           <TableAndTopPlatform />

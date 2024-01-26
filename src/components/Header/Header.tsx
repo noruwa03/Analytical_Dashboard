@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <>
       {" "}
-      <header className="lg:grid lg:grid-cols-6 items-center lg:h-20 h-14  bg-[#FAFAFA] dark:bg-[#1e262c] dark:text-white border-b-[0.8px] border-gray-[#E3E3E3] sticky top-0 z-30 lg:px-6 sm:px-8 px-6 gap-6">
+      <header className="lg:grid lg:grid-cols-6 items-center lg:h-20 h-14  bg-[#FAFAFA] dark:bg-black dark:text-white border-b-[0.8px] border-gray-[#E3E3E3] sticky top-0 z-30 lg:px-6 sm:px-8 px-6 gap-6">
         <div className="col-span-2">
           <h1 className="font-semibold lg:relative lg:top-0 lg:left-0 fixed top-4 left-6">
             Dashboard
@@ -70,7 +70,7 @@ const Header = () => {
 
               <div className="font-semibold text-sm">November 15, 2023</div>
             </div>
-            <div className="grid place-content-center bg-white dark:bg-[#1e262c] dark:[&>svg>path]:fill-white shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-2 rounded-full cursor-pointer">
+            <div className="grid place-content-center bg-white dark:bg-[#0e1111] dark:[&>svg>path]:fill-white shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-2 rounded-full cursor-pointer">
               <svg
                 width="20"
                 height="20"
@@ -118,7 +118,7 @@ const Header = () => {
                 />
               </svg>
 
-              <ul className="hidden absolute lg:top-11 lg:right-0 -top-4 sm:-right-24 -right-12 bg-white dark:bg-[#1e262c] shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] dark:border-[1px] dark:border-gray-50 w-60 rounded-xl before:absolute lg:before:left-[85%] lg:before:-translate-x-[10%] before:left-[10%] before:-translate-x-[10%] before:-translate-y-2 before:content-[''] before:bg-transparent before:h-4 before:w-4 before:-rotate-45 text-sm flex-col ">
+              <ul className="hidden absolute lg:top-11 lg:right-0 -top-4 sm:-right-24 -right-12 bg-white dark:bg-[#0e1111] shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] dark:border-[1px] dark:border-gray-50 w-60 rounded-xl before:absolute lg:before:left-[85%] lg:before:-translate-x-[10%] before:left-[10%] before:-translate-x-[10%] before:-translate-y-2 before:content-[''] before:bg-transparent before:h-4 before:w-4 before:-rotate-45 text-sm flex-col ">
                 <li className="mt-3 mb-1 px-5 hover:bg-gray-100 dark:hover:bg-[#34CAA5] dark:[&>a>svg>path]:fill-white">
                   <a
                     className="py-1 flex flex-row items-center justify-start space-x-2"

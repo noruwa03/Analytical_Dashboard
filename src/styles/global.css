@@ -601,6 +601,10 @@ video {
   top: 0px;
 }
 
+.top-1 {
+  top: 0.25rem;
+}
+
 .top-14 {
   top: 3.5rem;
 }
@@ -631,10 +635,6 @@ video {
 
 .z-40 {
   z-index: 40;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .z-\[35\] {
@@ -681,6 +681,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -721,12 +725,16 @@ video {
   display: none;
 }
 
-.aspect-\[3\/1\.47\] {
-  aspect-ratio: 3/1.47;
+.aspect-\[3\/1\.57\] {
+  aspect-ratio: 3/1.57;
 }
 
 .h-14 {
   height: 3.5rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-3 {
@@ -755,10 +763,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .w-1 {
@@ -828,6 +832,11 @@ video {
 
 .-translate-y-\[50\%\] {
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-14 {
+  --tw-translate-x: 3.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -981,6 +990,10 @@ video {
   border-top-left-radius: 0.375rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-\[1px\] {
   border-width: 1px;
 }
@@ -1076,11 +1089,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-
 .bg-none {
   background-image: none;
 }
@@ -1094,16 +1102,12 @@ video {
   padding: 0.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
+.p-\[0\.8rem\] {
+  padding: 0.8rem;
 }
 
 .px-1 {
@@ -1189,6 +1193,10 @@ video {
   font-size: 0.7em;
 }
 
+.text-\[0\.84em\] {
+  font-size: 0.84em;
+}
+
 .text-\[0\.89em\] {
   font-size: 0.89em;
 }
@@ -1205,9 +1213,19 @@ video {
   font-size: 0.9em;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-medium {
@@ -1439,9 +1457,9 @@ input[type="checkbox"]:checked ~ label .moon path {
   background-color: rgb(14 17 17 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:bg-\[\#1e262c\]) {
+:is(.dark .dark\:bg-black) {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 38 44 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:bg-white) {
@@ -1553,16 +1571,16 @@ input[type="checkbox"]:checked ~ label .moon path {
     height: 5rem;
   }
 
-  .lg\:w-\[42\%\] {
-    width: 42%;
+  .lg\:w-\[44\%\] {
+    width: 44%;
   }
 
   .lg\:w-\[5\%\] {
     width: 5%;
   }
 
-  .lg\:w-\[56\%\] {
-    width: 56%;
+  .lg\:w-\[54\%\] {
+    width: 54%;
   }
 
   .lg\:w-\[95\%\] {

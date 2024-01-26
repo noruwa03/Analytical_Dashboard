@@ -1,13 +1,41 @@
+import BarChart from "../BarChart/BarChart";
+
 const SalesTrends = () => {
   return (
     <>
-      <div className="flex lg:flex-row flex-col lg:items-start justify-between lg:p-6 sm:p-8 p-6 gap-6">
-        <div className="lg:w-[56%] w-[100%] aspect-[3/1.47] bg-yellow-400 rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-4">
-          Hi
+      <div className="flex lg:flex-row flex-col lg:items-start justify-between lg:p-6 sm:p-8 p-4 gap-6">
+        <div className="lg:w-[54%] w-[100%] aspect-[3/1.57] bg-white dark:bg-[#0e1111] dark:text-white  rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-4 relative">
+          <div className="lg:block hidden absolute top-1 left-0 w-full">
+            <div className="flex flex-row items-center justify-between w-full px-4">
+              <h2 className="font-semibold text-base translate-x-14">
+                Sales Trends
+              </h2>
+              <div className="flex flex-row items-center justify-start gap-3">
+                <p className="text-sm font-semibold">Short by:</p>
+                <div className="lg:border-[1px] lg:border-gray-200 text-xs rounded-full px-3 py-1 flex flex-row items-center justify-start gap-1 cursor-pointer">
+                  <span>Weekly</span>
+                  <svg
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="dark:[&>path]:fill-white"
+                  >
+                    <path
+                      d="M3.72456 7.14131C3.94645 6.91942 4.29367 6.89925 4.53835 7.0808L4.60845 7.14131L9.99984 12.5324L15.3912 7.14131C15.6131 6.91942 15.9603 6.89925 16.205 7.0808L16.2751 7.14131C16.497 7.3632 16.5172 7.71042 16.3356 7.9551L16.2751 8.02519L10.4418 13.8585C10.2199 14.0804 9.87267 14.1006 9.62799 13.919L9.5579 13.8585L3.72456 8.02519C3.48048 7.78112 3.48048 7.38539 3.72456 7.14131Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <BarChart />
         </div>
-        <div className="lg:w-[42%] w-[100%]">
+        <div className="lg:w-[44%] w-[100%]">
           <div className="grid grid-cols-4 gap-5">
-            <div className="lg:col-span-2 sm:col-span-2 col-span-4 bg-white dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-3">
+            <div className="lg:col-span-2 sm:col-span-2 col-span-4 bg-white dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-[0.8rem]">
               <div className="flex flex-row items-center justify-between">
                 <div className="grid place-content-center bg-white shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-2 rounded-full cursor-pointer">
                   <svg
@@ -73,7 +101,7 @@ const SalesTrends = () => {
               <h2 className="text-[#898989] font-medium my-2 text-[0.95em]">
                 Total Order
               </h2>
-              <h3 className="lg:text-xl text-2xl font-semibold my-1">350</h3>
+              <h3 className="lg:text-xl text-2xl font-semibold my-2">350</h3>
               <div className="flex flex-row items-center justify-start gap-3 lg:mt-0 mt-3">
                 <div className="flex flex-row items-center justify-start bg-green-50 py-1 px-2 rounded-full cursor-pointer gap-1">
                   <svg
@@ -103,7 +131,7 @@ const SalesTrends = () => {
                 </p>
               </div>
             </div>
-            <div className="lg:col-span-2 sm:col-span-2 col-span-4 bg-white dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-3">
+            <div className="lg:col-span-2 sm:col-span-2 col-span-4 bg-white dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-[0.8rem]">
               <div className="flex flex-row items-center justify-between">
                 <div className="grid place-content-center bg-white shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-2 rounded-full cursor-pointer">
                   <svg
@@ -170,7 +198,7 @@ const SalesTrends = () => {
               <h2 className="text-[#898989] font-medium my-2 text-[0.95em]">
                 Total Refund
               </h2>
-              <h3 className="lg:text-xl text-2xl font-semibold my-1">270</h3>
+              <h3 className="lg:text-xl text-2xl font-semibold my-2">270</h3>
               <div className="flex flex-row items-center justify-start gap-3 lg:mt-0 mt-3">
                 <div className="flex flex-row items-center justify-start bg-red-50 py-1 px-2 rounded-full cursor-pointer gap-1">
                   <svg
@@ -202,7 +230,7 @@ const SalesTrends = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-2 sm:col-span-2 col-span-4 bg-white dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-3">
+            <div className="lg:col-span-2 sm:col-span-2 col-span-4 bg-white dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-[0.8rem]">
               <div className="flex flex-row items-center justify-between">
                 <div className="grid place-content-center bg-white shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-2 rounded-full cursor-pointer">
                   <svg
@@ -266,7 +294,7 @@ const SalesTrends = () => {
               <h2 className="text-[#898989] font-medium my-2 text-[0.95em]">
                 Average Sales
               </h2>
-              <h3 className="lg:text-xl text-2xl font-semibold my-1">1567</h3>
+              <h3 className="lg:text-xl text-2xl font-semibold my-2">1567</h3>
               <div className="flex flex-row items-center justify-start gap-3 lg:mt-0 mt-3">
                 <div className="flex flex-row items-center justify-start bg-red-50 py-1 px-2 rounded-full cursor-pointer gap-1">
                   <svg
@@ -298,7 +326,7 @@ const SalesTrends = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-2 sm:col-span-2 col-span-4 bg-white dar dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-3">
+            <div className="lg:col-span-2 sm:col-span-2 col-span-4 bg-white dar dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-[0.8rem]">
               <div className="flex flex-row items-center justify-between">
                 <div className="grid place-content-center bg-white shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-2 rounded-full cursor-pointer">
                   <svg
@@ -358,7 +386,7 @@ const SalesTrends = () => {
               <h2 className="text-[#898989] font-medium my-2 text-[0.95em]">
                 Total Income
               </h2>
-              <h3 className="lg:text-xl text-2xl font-semibold my-1">
+              <h3 className="lg:text-xl text-2xl font-semibold my-2">
                 $350.000
               </h3>
               <div className="flex flex-row items-center justify-start gap-3 lg:mt-0 mt-3">

@@ -1,7 +1,7 @@
 const TopPlatform = () => {
   return (
     <>
-      <div className="lg:w-[42%] w-[100%] bg-white dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-4">
+      <div className="lg:w-[44%] w-[100%] bg-white dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-4">
         <div className="flex flex-row items-center justify-between">
           <h2 className="font-semibold text-sm">Top Platform</h2>
           <p className="text-sm text-[#34CAA5] font-semibold">See All</p>

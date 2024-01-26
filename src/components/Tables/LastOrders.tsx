@@ -1,8 +1,8 @@
 const LastOrders = () => {
   return (
     <>
-      <div className="lg:w-[56%] w-[100%] bg-white dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-4">
-        <div className="flex flex-row items-center justify-between">
+      <div className="lg:w-[54%] w-[100%] bg-white dark:bg-[#0e1111] dark:text-white rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-4">
+        <div className="flex flex-row items-center justify-between mb-4">
           <h2 className="font-semibold text-sm">Last Orders</h2>
           <p className="font-semibold text-sm text-[#34CAA5]">See All</p>
         </div>

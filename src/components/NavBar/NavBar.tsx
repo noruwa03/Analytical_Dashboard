@@ -61,7 +61,7 @@ const NavBar: React.ForwardRefRenderFunction<
         ref={ref}
         className="lg:sticky lg:top-0 lg:block hidden lg:w-[5%] fixed w-full z-[35] h-full dark:text-white"
       >
-        <aside className="h-[100vh] overflow-y-auto relative bg-[#F7F8FA] dark:bg-[#1e262c] border-r-[1px] border-b-[1px] border-[#EBECF2]">
+        <aside className="h-[100vh] overflow-y-auto relative bg-[#F7F8FA] dark:bg-black border-r-[1px] border-b-[1px] border-[#EBECF2]">
           <div className="grid lg:place-content-center place-content-start lg:px-0 px-4 pt-4">
             <svg
               width="40"
@@ -79,7 +79,7 @@ const NavBar: React.ForwardRefRenderFunction<
             </svg>
           </div>
 
-          <ul className="py-2 [&>li:nth-child(8)]:px-4 [&>li:nth-child(8)]:mt-6 lg:[&>li:nth-child(8)]:absolute lg:[&>li:nth-child(8)]:bottom-0 [&>li:nth-child(3)]:left-[50%] [&>li:nth-child(3)]:-translate-x-[50%] dark:[&>li>a>svg>path]:stroke-white">
+          <ul className="py-2 [&>li:nth-child(8)]:px-4 [&>li:nth-child(8)]:mt-6 lg:[&>li:nth-child(8)]:absolute lg:[&>li:nth-child(8)]:bottom-0 [&>li:nth-child(3)]:left-[50%] [&>li:nth-child(3)]:-translate-x-[50%] dark:[&>li>a>svg>path]:stroke-white text-[0.84em]">
             <li className="my-3 relative grid lg:place-content-center place-content-start lg:px-0 px-4 [&>span]:hover:bg-[#34CAA5] [&>a>svg>path]:hover:fill-[#34CAA5] [&>a>span]:hover:text-[#34CAA5] dark:[&>a>svg>path]:hover:stroke-[#34CAA5]">
               <a
                 className="py-2 [&>*>svg]:hover:fill-black [&>*]:hover:text-[#34CAA5] [&>*]:hover:font-semibold flex flex-row items-center justify-start space-x-2"
@@ -89,7 +89,7 @@ const NavBar: React.ForwardRefRenderFunction<
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  fill="none"
+                  fill="none0e1111"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
