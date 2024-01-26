@@ -7,7 +7,7 @@ const Invoice = ({ close }: InvoiceType) => {
     <>
       {" "}
       <div className="fixed top-0 left-0 h-full w-full oveflow-y-auto bg-green-900/25 z-[25]">
-        <div className="lg:w-[35%] w-[90%]  fixed lg:top-[55%] top-[52%] lg:left-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] mx-auto lg:p-5 p-4 bg-white rounded-xl">
+        <div className="lg:w-[35%] w-[90%] fixed lg:top-[55%] top-[52%] lg:left-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] mx-auto lg:p-5 p-4 bg-white dark:bg-[#0e1111] dark:border-[1px] dark:border-green-50 rounded-xl">
           <div className="flex flex-row items-center justify-between">
             <div className="flex flex-row items-center justify-start gap-2">
               <svg
@@ -25,14 +25,17 @@ const Invoice = ({ close }: InvoiceType) => {
                 />
               </svg>
 
-              <h1 className="font-semibold text-black">Invoice</h1>
+              <h1 className="font-semibold text-black dark:text-white">Invoice</h1>
             </div>
-            <div onClick={close} className="text-base font-semibold text-red-400 cursor-pointer">
+            <div
+              onClick={close}
+              className="text-base font-semibold text-red-400 cursor-pointer"
+            >
               Close
             </div>
           </div>
 
-          <div className="lg:p-4 p-4 rounded-xl bg-gray-50 space-y-4 my-7">
+          <div className="lg:p-4 p-4 rounded-xl bg-gray-50 dark:bg-green-900/25 dark:text-white space-y-4 my-7">
             <div className="flex flex-row items-start justify-between">
               <h1 className="lg:text-base text-sm font-medium">Date</h1>
               <p className="text-sm font-medium">Nov 15, 2023</p>

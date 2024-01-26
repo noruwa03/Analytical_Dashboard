@@ -40,7 +40,7 @@ const SalesTrends = () => {
 
                   <ul
                     ref={dropdown}
-                    className="hidden absolute top-10 lg:right-0 -right-28 bg-white shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] w-28 p-3 rounded-md before:absolute lg:before:left-[76%] lg:before:-translate-x-[10%] before:left-[10%] before:-translate-x-[10%] before:-translate-y-6 before:content-[''] before:bg-green-50 before:h-4 before:w-4 before:-rotate-45 flex-col text-xs"
+                    className="hidden absolute top-10 lg:right-0 -right-28 bg-white dark:bg-[#0e1111] dark:border-[1px] dark:border-gray-50 shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] w-28 p-3 rounded-md before:absolute lg:before:left-[76%] lg:before:-translate-x-[10%] before:left-[10%] before:-translate-x-[10%] before:-translate-y-6 before:content-[''] before:bg-green-50 before:h-4 before:w-4 before:-rotate-45 flex-col text-xs"
                   >
                     <li className="mt-1 cursor-pointer hover:text-[#34CAA5]">
                       Weekly
