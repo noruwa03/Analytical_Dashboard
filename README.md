@@ -17,19 +17,19 @@
 
 ### Desktop view light and dark mode
 
-![Desktop view](./public/preview/desktop_light.PNG)
+![Desktop view light](./public/preview/desktop_light.PNG)
 
 <br/>
 
-![Mobile view](./public/preview/desktop_dark.png)
+![Desktop view dark](./public/preview/desktop_dark.PNG)
 
 <br/>
 <br/>
 
 ### Mobile view light and dark mode
 
-![Desktop view](./public/preview/mobile_light.PNG)
+![Mobile view light](./public/preview/mobile_light.png)
 
 <br/>
 
-![Mobile view](./public/preview/mobile_dark.png)
+![Mobile view dark](./public/preview/mobile_dark.png)
