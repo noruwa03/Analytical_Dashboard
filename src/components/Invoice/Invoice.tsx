@@ -1,8 +1,12 @@
 type InvoiceType = {
+  fullname: string;
+  date: string;
+  amount: string;
+  status: string;
   close: () => void;
 };
 
-const Invoice = ({ close }: InvoiceType) => {
+const Invoice = ({ fullname, date, amount, status, close }: InvoiceType) => {
   return (
     <>
       {" "}
@@ -25,7 +29,9 @@ const Invoice = ({ close }: InvoiceType) => {
                 />
               </svg>
 
-              <h1 className="font-semibold text-black dark:text-white">Invoice</h1>
+              <h1 className="font-semibold text-black dark:text-white">
+                Invoice
+              </h1>
             </div>
             <div
               onClick={close}
@@ -37,16 +43,26 @@ const Invoice = ({ close }: InvoiceType) => {
 
           <div className="lg:p-4 p-4 rounded-xl bg-gray-50 dark:bg-green-900/25 dark:text-white space-y-4 my-7">
             <div className="flex flex-row items-start justify-between">
+              <h1 className="lg:text-base text-sm font-medium">Fullname</h1>
+              <p className="text-sm font-medium">{fullname}</p>
+            </div>
+            <div className="flex flex-row items-start justify-between">
               <h1 className="lg:text-base text-sm font-medium">Date</h1>
-              <p className="text-sm font-medium">Nov 15, 2023</p>
+              <p className="text-sm font-medium">{date}</p>
             </div>
             <div className="flex flex-row items-start justify-between">
               <h1 className="lg:text-base text-sm font-medium">Status</h1>
-              <p className="text-base font-medium text-[#34CAA5]">Paid</p>
+              <p
+                className={`text-base font-medium ${
+                  status === "Paid" ? "text-[#34CAA5]" : "text-[#ED544E]"
+                } `}
+              >
+                {status}
+              </p>
             </div>
             <div className="flex flex-row items-start justify-between">
               <h1 className="lg:text-base text-sm font-medium">Amount</h1>
-              <p className="text-sm font-medium">$150,000</p>
+              <p className="text-sm font-medium">${amount}</p>
             </div>
           </div>
           <div className="grid place-content-end mt-4">
