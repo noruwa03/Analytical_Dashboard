@@ -637,6 +637,46 @@ video {
   top: 52%;
 }
 
+.top-2 {
+  top: 0.5rem;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.-right-8 {
+  right: -2rem;
+}
+
+.-right-0 {
+  right: -0px;
+}
+
+.right-28 {
+  right: 7rem;
+}
+
+.-right-2 {
+  right: -0.5rem;
+}
+
+.-right-56 {
+  right: -14rem;
+}
+
+.-right-10 {
+  right: -2.5rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-32 {
+  top: 8rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -739,6 +779,22 @@ video {
   margin-top: 1rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
 .block {
   display: block;
 }
@@ -761,6 +817,18 @@ video {
 
 .aspect-\[3\/1\.57\] {
   aspect-ratio: 3/1.57;
+}
+
+.aspect-\[3\/2\] {
+  aspect-ratio: 3/2;
+}
+
+.aspect-\[3\/3\] {
+  aspect-ratio: 3/3;
+}
+
+.aspect-\[3\/2\.5\] {
+  aspect-ratio: 3/2.5;
 }
 
 .h-14 {
@@ -1178,6 +1246,14 @@ video {
   padding: 0.8rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-\[0\.35rem\] {
+  padding: 0.35rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1226,6 +1302,16 @@ video {
 .py-\[0\.4rem\] {
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
+}
+
+.px-\[0\.45rem\] {
+  padding-left: 0.45rem;
+  padding-right: 0.45rem;
+}
+
+.py-\[0\.2rem\] {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .pb-6 {
@@ -1298,6 +1384,14 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[0\.8em\] {
+  font-size: 0.8em;
+}
+
+.text-\[0\.68em\] {
+  font-size: 0.68em;
 }
 
 .font-medium {
@@ -1472,6 +1566,26 @@ input[type="checkbox"]:checked ~ label .moon path {
   left: 10%;
 }
 
+.before\:left-\[90\%\]::before {
+  content: var(--tw-content);
+  left: 90%;
+}
+
+.before\:left-\[80\%\]::before {
+  content: var(--tw-content);
+  left: 80%;
+}
+
+.before\:left-\[78\%\]::before {
+  content: var(--tw-content);
+  left: 78%;
+}
+
+.before\:left-\[76\%\]::before {
+  content: var(--tw-content);
+  left: 76%;
+}
+
 .before\:h-4::before {
   content: var(--tw-content);
   height: 1rem;
@@ -1604,12 +1718,32 @@ input[type="checkbox"]:checked ~ label .moon path {
 }
 
 @media (min-width: 640px) {
+  .sm\:relative {
+    position: relative;
+  }
+
   .sm\:-right-24 {
     right: -6rem;
   }
 
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .sm\:aspect-\[3\/1\.57\] {
+    aspect-ratio: 3/1.57;
+  }
+
+  .sm\:aspect-\[3\/2\] {
+    aspect-ratio: 3/2;
+  }
+
+  .sm\:aspect-\[3\/1\.7\] {
+    aspect-ratio: 3/1.7;
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
   }
 
   .sm\:p-8 {
@@ -1619,6 +1753,54 @@ input[type="checkbox"]:checked ~ label .moon path {
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+
+  .md\:aspect-\[3\/1\.57\] {
+    aspect-ratio: 3/1.57;
+  }
+
+  .md\:aspect-\[3\/2\] {
+    aspect-ratio: 3/2;
+  }
+
+  .md\:aspect-\[3\/1\.72\] {
+    aspect-ratio: 3/1.72;
+  }
+
+  .md\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1655,6 +1837,14 @@ input[type="checkbox"]:checked ~ label .moon path {
     top: 55%;
   }
 
+  .lg\:top-1 {
+    top: 0.25rem;
+  }
+
+  .lg\:top-10 {
+    top: 2.5rem;
+  }
+
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1683,6 +1873,10 @@ input[type="checkbox"]:checked ~ label .moon path {
     display: none;
   }
 
+  .lg\:aspect-\[3\/1\.57\] {
+    aspect-ratio: 3/1.57;
+  }
+
   .lg\:h-20 {
     height: 5rem;
   }
@@ -1709,6 +1903,26 @@ input[type="checkbox"]:checked ~ label .moon path {
 
   .lg\:-translate-x-\[50\%\] {
     --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:-translate-y-\[50\%\] {
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:-translate-y-\[0\%\] {
+    --tw-translate-y: -0%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:-translate-x-\[0\%\] {
+    --tw-translate-x: -0%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:translate-x-14 {
+    --tw-translate-x: 3.5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1767,6 +1981,16 @@ input[type="checkbox"]:checked ~ label .moon path {
     padding-right: 1.5rem;
   }
 
+  .lg\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .lg\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
@@ -1779,6 +2003,15 @@ input[type="checkbox"]:checked ~ label .moon path {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .lg\:text-\[\] {
+    color: ;
   }
 
   .lg\:before\:left-\[76\%\]::before {
@@ -1795,6 +2028,34 @@ input[type="checkbox"]:checked ~ label .moon path {
     content: var(--tw-content);
     --tw-translate-x: -10%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:aspect-\[3\/2\] {
+    aspect-ratio: 3/2;
+  }
+
+  .xl\:aspect-\[3\/1\.4\] {
+    aspect-ratio: 3/1.4;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:aspect-\[3\/2\] {
+    aspect-ratio: 3/2;
+  }
+
+  .\32xl\:aspect-\[3\/1\.7\] {
+    aspect-ratio: 3/1.7;
+  }
+
+  .\32xl\:aspect-\[3\/1\.6\] {
+    aspect-ratio: 3/1.6;
+  }
+
+  .\32xl\:aspect-\[3\/1\.4\] {
+    aspect-ratio: 3/1.4;
   }
 }
 

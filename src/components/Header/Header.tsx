@@ -18,7 +18,7 @@ const Header = () => {
             Dashboard
           </h1>
         </div>
-        <div className="lg:col-span-4 col-span-8 lg:grid lg:relative lg:top-0 lg:left-0 fixed top-14 left-0 h-20 w-full z-20 grid-cols-6 lg:px-0 px-6 items-center gap-6">
+        <div className="lg:col-span-4 col-span-8 lg:grid lg:relative lg:top-0 lg:left-0 fixed top-14 left-0 lg:h-20 w-full z-20 grid-cols-6 lg:px-0 px-6 items-center gap-6">
           <div className="lg:block hidden col-span-2 lg:mt-0 mt-4 relative dark:text-black">
             <input
               type="search"

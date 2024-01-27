@@ -1,29 +1,38 @@
-import { useRef } from "react";
+import { useRef, useState, Fragment } from "react";
 import BarChart from "../BarChart/BarChart";
 
 const SalesTrends = () => {
-
   const dropdown = useRef<HTMLUListElement | null>(null);
   const toggleDropdown = () => {
     dropdown.current?.classList.toggle("hidden");
   };
 
+  const sortByOptions = ["Weekly", "Monthly", "Yearly"];
+
+  const [sortBy, setSortBy] = useState("Weekly");
+
+  const sortByHandler = (res: string) => {
+    setSortBy(res);
+  };
+
   return (
     <>
       <div className="flex lg:flex-row flex-col lg:items-start justify-between lg:p-6 sm:p-8 p-4 gap-6">
-        <div className="lg:w-[54%] w-[100%] aspect-[3/1.57] bg-white dark:bg-[#0e1111] dark:text-white  rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] p-4 relative">
-          <div className="lg:block hidden absolute top-1 left-0 w-full">
+        <div className="lg:w-[54%] w-[100%] 2xl:aspect-[3/1.4] lg:aspect-[3/1.57] md:aspect-[3/1.72] sm:aspect-[3/1.7] aspect-[3/2] bg-white dark:bg-[#0e1111] dark:text-white  rounded-2xl shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] lg:p-4 sm:px-3 p-[0.35rem] relative">
+          <div className="lg:block absolute lg:top-1 top-3 left-0 w-full">
             <div className="flex flex-row items-center justify-between w-full px-4">
-              <h2 className="font-semibold text-base translate-x-14">
+              <h2 className="font-semibold sm:text-base text-xs lg:translate-x-14">
                 Sales Trends
               </h2>
-              <div className="flex flex-row items-center justify-start gap-3">
-                <p className="text-sm font-semibold">Short by:</p>
+              <div className="flex flex-row items-center justify-start sm:gap-3 gap-1">
+                <p className="sm:text-sm text-[0.68em] font-semibold">
+                  Short by:
+                </p>
                 <div
                   onClick={toggleDropdown}
-                  className="lg:border-[1px] lg:border-gray-200 text-xs rounded-full px-3 py-1 flex flex-row items-center justify-start gap-1 relative"
+                  className="border-[1px] border-gray-200 lg:text-xs sm:text-sm text-[0.68em] rounded-full lg:px-3 px-[0.45rem] lg:py-1 py-[0.2rem] flex flex-row items-center justify-start gap-1 relative"
                 >
-                  <span>Weekly</span>
+                  <span>{sortBy}</span>
                   <svg
                     width="20"
                     height="21"
@@ -40,24 +49,28 @@ const SalesTrends = () => {
 
                   <ul
                     ref={dropdown}
-                    className="hidden absolute top-10 lg:right-0 -right-28 bg-white dark:bg-[#0e1111] dark:border-[1px] dark:border-gray-50 shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] w-28 p-3 rounded-md before:absolute lg:before:left-[76%] lg:before:-translate-x-[10%] before:left-[10%] before:-translate-x-[10%] before:-translate-y-6 before:content-[''] before:bg-green-50 before:h-4 before:w-4 before:-rotate-45 flex-col text-xs"
+                    className="hidden absolute top-10 -right-0 bg-white dark:bg-[#0e1111] dark:border-[1px] dark:border-gray-50 shadow-[0_0px_4px_-1.76px_rgba(0,0,0,0.3)] w-28 px-3 rounded-md before:absolute lg:before:left-[76%] lg:before:-translate-x-[10%] before:left-[76%] before:-translate-x-[10%] before:-translate-y-6 flex-col text-xs"
                   >
-                    <li className="mt-1 cursor-pointer hover:text-[#34CAA5]">
-                      Weekly
-                    </li>
-
-                    <li className="my-2 cursor-pointer hover:text-[#34CAA5]">
-                      Monthly
-                    </li>
-                    <li className="mt-1 cursor-pointer hover:text-[#34CAA5]">
-                      Yearly
-                    </li>
+                    {sortByOptions.map((data: string) => {
+                      return (
+                        <Fragment key={data}>
+                          <li
+                            onClick={() => sortByHandler(data)}
+                            className="my-2 cursor-pointer hover:text-[#34CAA5]"
+                          >
+                            {data}
+                          </li>
+                        </Fragment>
+                      );
+                    })}
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <BarChart />
+          <div className="lg:mt-0 mt-10">
+            <BarChart />
+          </div>
         </div>
         <div className="lg:w-[44%] w-[100%]">
           <div className="grid grid-cols-4 gap-5">
