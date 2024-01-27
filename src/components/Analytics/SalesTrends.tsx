@@ -68,7 +68,7 @@ const SalesTrends = () => {
               </div>
             </div>
           </div>
-          <div className="lg:mt-0 mt-10">
+          <div className="lg:mt-0 mt-10 w-full h-full">
             <BarChart />
           </div>
         </div>
